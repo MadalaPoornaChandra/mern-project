@@ -7,11 +7,11 @@ const HotelRouter=require('./Router/HotelRouter');
 const UserRouter=require('./Router/UserRouter');
 const RoomRouter=require('./Router/RoomRouter');
 
-app.get("/",(req,res)=>{
-  res.setHeader("Access-Control-Allow-Credentials",true)
-  res.send("API is Running...");
+// app.get("/",(req,res)=>{
+//   res.setHeader("Access-Control-Allow-Credentials",true)
+//   res.send("API is Running...");
 
-});
+// });
 
 mongoose.connect(dbConfig.db)
 .then(()=>{
